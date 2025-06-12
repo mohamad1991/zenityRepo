@@ -1,4 +1,6 @@
 language: minimal
+group: edge
+dist: focal
 
 services:
   - docker
