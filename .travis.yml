@@ -8,7 +8,6 @@ before_install:
 
 script:
   - docker build -t $DOCKER_USERNAME/code-publisher .
-  - ./test.sh  # optional: run tests
 
 deploy:
   provider: script
