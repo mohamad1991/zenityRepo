@@ -27,7 +27,7 @@ The code is well-documented, designed for containerized deployment, and includes
 ---
 
 ### 2. Application Structure
-.
+
 ├── app/
 
 │   ├── __init__.py        
@@ -41,7 +41,11 @@ The code is well-documented, designed for containerized deployment, and includes
 
 ├── docker-compose.yml
 
+---
 
+### 3. Deploy to ECS in AWS
 
-
+In the bonus step I decide to do the following:
+Choosing ECS as the service to deploy the docker container to, is it the easiest way because it is Serverless – no need to manage EC2 instances and it is supports Docker out of the box
+I have to say that in order to create such a thing first I need to create a Terraform project to manage the ECS ( it is a big project ) and also create the yaml file for the deployment, I attached the yaml file I have to say that I use the AI to create it ( I also did not test it )
 
