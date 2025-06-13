@@ -19,7 +19,6 @@ script:
   - pytest test/test_app.py
 
 after_success:
-  - cd theDoctor
   - docker build -t $DOCKER_USERNAME/zenity .
 
 deploy:
