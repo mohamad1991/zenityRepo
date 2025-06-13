@@ -6,6 +6,8 @@ services:
   - docker
 
 before_install:
+  - cd theDoctor
+  - export PYTHONPATH=.
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
 
 install:
