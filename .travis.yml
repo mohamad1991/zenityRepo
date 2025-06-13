@@ -12,7 +12,8 @@ install:
   - pip install pytest
 
 script:
-  - pytest theDoctor/test/test_app.py
+  - cd theDoctor
+  - pytest test/test_app.py
 
 after_success:
   - cd theDoctor
